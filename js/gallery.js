@@ -77,8 +77,10 @@ function handlerGetProduct(evt) {
     const imageAlt = target.getAttribute("alt");
 
     const instance = basicLightbox.create(`   
+       <div class="modal">
         <img src="${largeImageSrc}" alt="${imageAlt}">
             <p>${imageAlt}</p> <!-- Додаємо підпис до великого зображення -->
+            </div>
         `);
 
     instance.show();
